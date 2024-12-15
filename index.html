@@ -7,7 +7,7 @@
     <!-- Open Graph Tags for Embed Message -->
     <meta content="PWS" property="og:title"/>
     <meta content="School PWS van Sam & Swen" property="og:description"/>
-    <meta content="0x Raider" property="og:site_name"/>
+    <meta content="PWS" property="og:site_name"/>
     <meta content="http://gekkefries.xyz/" property="og:url"/>
     <meta content="http://gekkefries.xyz/images/logo.png" property="og:image"/>
     <meta content="image/png" property="og:image:type"/>
@@ -134,49 +134,33 @@
             overflow-y: scroll;
         }
 
-        /* Home Section Styling */
-        #home {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 60px 20px;
-            text-align: center;
-            position: relative;
-            width: 100%;
-            max-width: 1000px;
-            margin: 0 auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        #home h1 {
-            font-size: 2.5em;
-            color: #bb40bb;
-            margin-bottom: 20px;
-        }
-
         .image-container {
             position: relative;
-            width: 80%;
-            max-width: 500px;
-            height: auto;
+            width: 200px;
+            height: 200px;
             margin-bottom: 20px;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(138, 43, 226, 0.6), 0 0 50px rgba(75, 0, 130, 0.5);
         }
 
         .image-container img {
             width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 10px;
+            height: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.6), 0 0 50px rgba(75, 0, 130, 0.5);
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #bf40bf;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
         .buttons {
             display: flex;
-            justify-content: center;
             gap: 20px;
+            margin-top: 40px;
             flex-wrap: wrap;
-            margin-top: 20px;
+            justify-content: center;
         }
 
         .button {
@@ -191,13 +175,64 @@
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
             margin: 5px;
-            width: 180px;
+            width: 220px;
             justify-content: space-between;
         }
 
         .button:hover {
             background-color: #3700b3;
             transform: translateY(-2px);
+        }
+
+        .showcase-image-container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            height: 300px;
+            margin-top: 40px;
+        }
+
+        .showcase-image-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.6), 0 0 50px rgba(75, 0, 130, 0.5);
+        }
+
+        .feature-list {
+            background: rgba(33, 33, 55, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 900px;
+            width: 90%;
+            max-height: 500px;
+            overflow-y: auto;
+            box-shadow: 0px 0px 15px rgba(75, 0, 130, 0.5);
+            margin-top: 40px;
+        }
+
+        .feature-list h2 {
+            font-size: 1.5em;
+            color: #bb86fc;
+            margin-bottom: 15px;
+        }
+
+        .feature-list ul {
+            list-style: none;
+            line-height: 1.8;
+        }
+
+        .feature-list ul li {
+            display: flex;
+            align-items: center;
+            color: #8f8fcc;
+            font-size: 1em;
+        }
+
+        .feature-list ul li::before {
+            content: ">";
+            color: #bb86fc;
+            margin-right: 8px;
         }
 
         /* Info Popup */
@@ -246,41 +281,79 @@
 
         /* Media Queries */
         @media (max-width: 768px) {
-            #home h1 {
-                font-size: 1.8em;
-            }
-
-            .image-container {
+            .showcase-image-container {
                 width: 100%;
-            }
-
-            .button {
-                width: 200px;
+                height: auto;
             }
 
             .buttons {
                 flex-direction: column;
             }
-        }
 
-        @media (max-width: 480px) {
-            #home h1 {
+            .button {
+                width: 100%;
+                justify-content: center;
+            }
+
+            h1 {
                 font-size: 1.5em;
             }
 
             .image-container {
-                width: 100%;
+                width: 150px;
+                height: 150px;
             }
 
-            .button {
-                width: 180px;
+            nav {
+                padding: 10px 0;
+                text-align: left;
+                box-shadow: none;
             }
 
             nav a {
+                margin: 10px;
                 font-size: 1em;
             }
         }
 
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2em;
+            }
+
+            .showcase-image-container img {
+                height: auto;
+            }
+
+            nav a {
+                font-size: 0.9em;
+            }
+        }
+
+        /* Updated Styles for "Voordelen" Section Buttons */
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
+            gap: 20px; /* Adjust gap between buttons */
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            margin: 5px;
+            width: 220px;
+            justify-content: space-between;
+        }
     </style>
 </head>
 <body>
@@ -296,14 +369,14 @@
     </nav>
     <section id="home">
         <h1>PWS - Sam & Swen</h1>
-        <div class="image-container">
-            <img src="https://raw.githubusercontent.com/realgekkefries/pws/refs/heads/main/images/text.png" alt="credits">
-        </div>
         <div class="buttons">
             <div class="button" onclick="showInfo('introductie')">
                 Introductie
                 <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
             </div>
+        </div>
+        <div class="showcase-image-container">
+            <img src="https://raw.githubusercontent.com/realgekkefries/pws/refs/heads/main/images/text.png" alt="credits">
         </div>
     </section>
 
