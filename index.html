@@ -57,6 +57,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             backdrop-filter: blur(10px);
             overflow-x: auto;
+            white-space: nowrap;
         }
 
         nav a {
@@ -68,11 +69,23 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
         }
 
         nav a:hover {
             color: #bb40bb;
             transform: scale(1.1);
+        }
+
+        /* Add separator between navigation items */
+        nav a::after {
+            content: "|";
+            color: #e0e0e0;
+            margin-left: 20px;
+        }
+
+        nav a:last-child::after {
+            content: "";
         }
 
         section {
@@ -322,7 +335,6 @@
         <a href="#risico’s">Risico’s van Investeren</a>
         <a href="#conclusie">Conclusie</a>
     </nav>
-
     <section id="home">
         <h1>PWS - Sam & Swen</h1>
         <div class="buttons">
