@@ -249,6 +249,7 @@
 <body>
     <nav>
         <a href="#home">Home</a>
+        <a href="#voordelen">Voordelen van Online Investeren</a>
     </nav>
 
     <section id="home">
@@ -264,6 +265,54 @@
         </div>
     </section>
 
+    <section id="voordelen">
+        <h1>Voordelen van Online Investeren</h1>
+        <p>Er zijn veel voordelen van online investeren. Hieronder gaan wij uitleggen welke voordelen er zijn van online investeren.</p>
+        
+        <div class="buttons">
+            <div class="button" onclick="showInfo('toegankelijkheid')">
+                Toegankelijkheid
+                <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
+            </div>
+            <div class="button" onclick="showInfo('gebruiksvriendelijk')">
+                Gebruiksvriendelijk
+                <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
+            </div>
+            <div class="button" onclick="showInfo('vooriedereen')">
+                Voor Iedereen Toegankelijk
+                <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
+            </div>
+            <div class="button" onclick="showInfo('lagerekosten')">
+                Lagere Kosten
+                <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
+            </div>
+            <div class="button" onclick="showInfo('lagerminimum')">
+                Lagere Minimum
+                <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
+            </div>
+            <div class="button" onclick="showInfo('community')">
+                Community
+                <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
+            </div>
+            <div class="button" onclick="showInfo('hulpmiddelen')">
+                Hulpmiddelen
+                <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
+            </div>
+            <div class="button" onclick="showInfo('geautomatiseerd')">
+                Geautomatiseerd Beleggen
+                <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
+            </div>
+            <div class="button" onclick="showInfo('roboadviseurs')">
+                Robo-Adviseurs
+                <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
+            </div>
+            <div class="button" onclick="showInfo('investeringskeuze')">
+                Brede Keuze aan Investeringen
+                <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
+            </div>
+        </div>
+    </section>
+
     <!-- Popup Modals -->
     <div class="overlay"></div>
     <div class="info-popup" id="introductie">
@@ -274,6 +323,75 @@
         <p>
             Wij hebben voor dit onderwerp gekozen omdat wij investeren allebei een erg interessant onderwerp vinden. En allebei later graag willen beginnen met investeren. En zien dit als de kans om er meer over te leren en beter in te worden om meer winst te maken.
         </p>
+    </div>
+
+    <div class="info-popup" id="toegankelijkheid">
+        <button class="close-btn" onclick="closePopup('toegankelijkheid')">&times;</button>
+        <p><strong>Toegankelijkheid</strong></p>
+        <p>Het is heel erg toegankelijk omdat je altijd er toegang hebt.</p>
+    </div>
+
+    <div class="info-popup" id="gebruiksvriendelijk">
+        <button class="close-btn" onclick="closePopup('gebruiksvriendelijk')">&times;</button>
+        <p><strong>Gebruiksvriendelijk</strong></p>
+        <p>Ook zijn de meeste apps gebruiksvriendelijk, waardoor het makkelijker is om te investeren online en om eraan te beginnen.</p>
+    </div>
+
+    <div class="info-popup" id="vooriedereen">
+        <button class="close-btn" onclick="closePopup('vooriedereen')">&times;</button>
+        <p><strong>Voor Iedereen Toegankelijk</strong></p>
+        <p>Iedereen kan zo een account aanmaken en ermee beginnen.</p>
+    </div>
+
+    <div class="info-popup" id="lagerekosten">
+        <button class="close-btn" onclick="closePopup('lagerekosten')">&times;</button>
+        <p><strong>Lagere Kosten</strong></p>
+        <p>Online heb je weinig tot geen extra kosten wanneer je iets wilt kopen of verkopen. Terwijl als je het niet online doet heb je vaak wel extra kosten.</p>
+    </div>
+
+    <div class="info-popup" id="lagerminimum">
+        <button class="close-btn" onclick="closePopup('lagerminimum')">&times;</button>
+        <p><strong>Lagere Minimum</strong></p>
+        <p>Er is een lager minimum wanneer je wilt investeren in iets, waardoor je makkelijker kan investeren. Normaal moet je een minimum investeren, maar wanneer je het online doet, is er vaak een lage minimum, waardoor mensen met een laag budget makkelijker kunnen investeren.</p>
+    </div>
+
+    <div class="info-popup" id="community">
+        <button class="close-btn" onclick="closePopup('community')">&times;</button>
+        <p><strong>Community</strong></p>
+        <p>Beleggers kunnen informatie plaatsen waarop hun strategieën staan uitgelegd en die je zelf kunt toepassen en gebruiken.</p>
+    </div>
+
+    <div class="info-popup" id="hulpmiddelen">
+        <button class="close-btn" onclick="closePopup('hulpmiddelen')">&times;</button>
+        <p><strong>Hulpmiddelen</strong></p>
+        <p>Met bijna alle websites en apps heb je grafieken waarop je de huidige prijzen kan zien, maar ook van het verleden van uren, dagen, maanden en jaren geleden. Bijvoorbeeld bij Live grafieken - Investing.com, waarbij je de grafieken en de tabellen van het verleden kunt zien.</p>
+    </div>
+
+    <div class="info-popup" id="geautomatiseerd">
+        <button class="close-btn" onclick="closePopup('geautomatiseerd')">&times;</button>
+        <p><strong>Geautomatiseerd Beleggen</strong></p>
+        <p>Geautomatiseerd beleggen heeft meerdere voordelen:</p>
+        <ul>
+            <li><strong>Tijdbesparend:</strong> Je hoeft zelf niet elke dag de beleggingsmarkt in de gaten te houden en transacties te maken, waardoor je veel tijd bespaart.</li>
+            <li><strong>Gemakkelijk voor beginners:</strong> Je hoeft niet veel kennis te hebben om dit te doen omdat de software het meeste al voor je doet en rekening houdt met je doelen.</li>
+        </ul>
+    </div>
+
+    <div class="info-popup" id="roboadviseurs">
+        <button class="close-btn" onclick="closePopup('roboadviseurs')">&times;</button>
+        <p><strong>Robo-Adviseurs</strong></p>
+        <p>Meeste robo-adviseurs (software die investeert voor je) beginnen met een vragenlijst zoals wat je doelen zijn en hoeveel je wilt investeren.</p>
+        <p>Er zijn meerdere soorten robo-adviseurs. Sommige doen alles voor je, maar je hebt ook anderen die je meer keuzes geven of enkel advies bieden.</p>
+    </div>
+
+    <div class="info-popup" id="investeringskeuze">
+        <button class="close-btn" onclick="closePopup('investeringskeuze')">&times;</button>
+        <p><strong>Brede Keuze aan Investeringen</strong></p>
+        <p>Er zijn veel verschillende mogelijkheden waarin je kunt investeren, hieronder een paar voorbeelden:</p>
+        <ul>
+            <li><strong>Crypto:</strong> Crypto is erg populair, maar het brengt hoge risico’s met zich mee. Vaak is de kans op verlies groter dan de kans op winst.</li>
+            <li><strong>Bedrijven:</strong> Investeren in bedrijven is erg populair onder investeerders, met veel informatie beschikbaar om de juiste keuzes te maken.</li>
+        </ul>
     </div>
 
     <script>
