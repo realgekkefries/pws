@@ -303,6 +303,7 @@
         <a href="#voordelen">Voordelen van Online Investeren</a>
         <a href="#impact">Impact van Sociale Media op Investeren</a>
         <a href="#handelsstrategieën">Handels Strategieën</a>
+        <a href="#risico’s">Risico’s van Investeren</a>
     </nav>
 
     <section id="home">
@@ -422,6 +423,129 @@
             </div>
         </div>
     </section>
+
+    <section id="risico’s">
+        <h1>Risico’s van Investeren</h1>
+        <p>Investeren brengt altijd risico's met zich mee. Het is belangrijk om de verschillende soorten risico's te begrijpen voordat je begint. Hier zijn de 7 grootste risico's waarmee je rekening moet houden:</p>
+
+        <div class="button-container">
+            <div class="button" onclick="showInfo('marktrisico')">
+                Markt Risico
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="button" onclick="showInfo('renterisico')">
+                Rente Risico
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="button" onclick="showInfo('kredietrisico')">
+                Krediet Risico
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="button" onclick="showInfo('liquiditeitrisico')">
+                Liquiditeit Risico
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="button" onclick="showInfo('valutarisico')">
+                Valuta Risico
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="button" onclick="showInfo('bedrijfsrisico')">
+                Bedrijf Risico
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="button" onclick="showInfo('psychologischrisico')">
+                Psychologisch Risico
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Modals -->
+    <div class="overlay"></div>
+
+    <div class="info-popup" id="marktrisico">
+        <button class="close-btn" onclick="closePopup('marktrisico')">&times;</button>
+        <p><strong>Markt Risico</strong></p>
+        <p>Marktrisico is het risico dat de waarde van je belegging daalt door onvoorziene economische omstandigheden zoals inflatie, pandemieën, of politieke onrust. Dit risico kan de prestaties van de markt beïnvloeden en de waarde van aandelen of obligaties verminderen.</p>
+        <p><strong>Kenmerken:</strong></p>
+        <ul>
+            <li>Geopolitieke gebeurtenissen</li>
+            <li>Economische schommelingen</li>
+            <li>Inflatie en andere wereldwijde factoren</li>
+        </ul>
+    </div>
+
+    <div class="info-popup" id="renterisico">
+        <button class="close-btn" onclick="closePopup('renterisico')">&times;</button>
+        <p><strong>Rente Risico</strong></p>
+        <p>Rente risico ontstaat wanneer de waarde van je beleggingen afneemt door veranderingen in de rentetarieven. Een stijging van de rente kan de waarde van obligaties en andere vaste inkomstenbeleggingen negatief beïnvloeden.</p>
+        <p><strong>Kenmerken:</strong></p>
+        <ul>
+            <li>Verhoogde leenkosten</li>
+            <li>Impact op aandelenmarkten</li>
+            <li>Verlies van waarde bij stijging van de rente</li>
+        </ul>
+    </div>
+
+    <div class="info-popup" id="kredietrisico">
+        <button class="close-btn" onclick="closePopup('kredietrisico')">&times;</button>
+        <p><strong>Krediet Risico</strong></p>
+        <p>Krediet risico is het risico dat een bedrijf of overheid zijn verplichtingen niet kan nakomen, wat kan leiden tot faillissement. Dit kan de waarde van je beleggingen verminderen, vooral bij leningen of obligaties van bedrijven met een lage kredietwaardigheid.</p>
+        <p><strong>Kenmerken:</strong></p>
+        <ul>
+            <li>Faillissement van bedrijven of staten</li>
+            <li>Verlies van geïnvesteerd kapitaal</li>
+            <li>Onzekerheid in het terugvorderen van leningen</li>
+        </ul>
+    </div>
+
+    <div class="info-popup" id="liquiditeitrisico">
+        <button class="close-btn" onclick="closePopup('liquiditeitrisico')">&times;</button>
+        <p><strong>Liquiditeit Risico</strong></p>
+        <p>Liquiditeit risico ontstaat wanneer je je beleggingen niet snel kunt verkopen, omdat er weinig vraag is naar het effect. Dit kan je in de problemen brengen als je snel je geld nodig hebt.</p>
+        <p><strong>Kenmerken:</strong></p>
+        <ul>
+            <li>Moeilijkheden bij het verkopen van beleggingen</li>
+            <li>Prijsdruk bij verkopen in een illiquide markt</li>
+            <li>Verlies van waarde bij verkoop op korte termijn</li>
+        </ul>
+    </div>
+
+    <div class="info-popup" id="valutarisico">
+        <button class="close-btn" onclick="closePopup('valutarisico')">&times;</button>
+        <p><strong>Valuta Risico</strong></p>
+        <p>Valutarisico is het risico dat de waarde van je beleggingen afneemt door wisselkoersschommelingen. Dit gebeurt meestal wanneer je belegt in buitenlandse markten en de waarde van de valuta waarin je belegt fluctueert ten opzichte van je eigen valuta.</p>
+        <p><strong>Kenmerken:</strong></p>
+        <ul>
+            <li>Wisselkoersschommelingen</li>
+            <li>Impact bij buitenlandse beleggingen</li>
+            <li>Verlies bij daling van de lokale valuta</li>
+        </ul>
+    </div>
+
+    <div class="info-popup" id="bedrijfsrisico">
+        <button class="close-btn" onclick="closePopup('bedrijfsrisico')">&times;</button>
+        <p><strong>Bedrijf Risico</strong></p>
+        <p>Bedrijfsrisico is het risico dat een bedrijf verlies maakt, wat kan leiden tot een daling van de waarde van je beleggingen. Dit kan bijvoorbeeld door slecht management, sterke concurrentie, of financiële problemen.</p>
+        <p><strong>Kenmerken:</strong></p>
+        <ul>
+            <li>Slecht management</li>
+            <li>Financiële problemen binnen het bedrijf</li>
+            <li>Externe invloeden zoals concurrentie of marktomstandigheden</li>
+        </ul>
+    </div>
+
+    <div class="info-popup" id="psychologischrisico">
+        <button class="close-btn" onclick="closePopup('psychologischrisico')">&times;</button>
+        <p><strong>Psychologisch Risico</strong></p>
+        <p>Psychologisch risico is het risico dat emoties zoals angst of hebzucht je beleggingsbeslissingen beïnvloeden. Dit kan leiden tot slechte keuzes zoals te vroeg verkopen of overmatig risico nemen in paniek.</p>
+        <p><strong>Kenmerken:</strong></p>
+        <ul>
+            <li>Beslissingen gebaseerd op emoties</li>
+            <li>Angst voor verlies of hebzucht voor winst</li>
+            <li>Beïnvloedt lange-termijn strategieën</li>
+        </ul>
+    </div>
 
     <!-- Popup Modals -->
     <div class="overlay"></div>
