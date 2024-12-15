@@ -262,8 +262,12 @@
                 <i class="fas fa-download" style="margin-right: 6px;"></i>
                 Download Latest Version
             </a>
-            <div class="button">
-                Info Button
+            <div class="button" onclick="showInfo('info1')">
+                Info Button 1
+                <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
+            </div>
+            <div class="button" onclick="showInfo('info2')">
+                Info Button 2
                 <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
             </div>
         </div>
@@ -272,35 +276,38 @@
         </div>
     </section>
 
-    <!-- Popup Modal -->
+    <!-- Popup Modals -->
     <div class="overlay"></div>
-    <div class="info-popup">
-        <button class="close-btn">&times;</button>
-        <p>This is an info button. Click on the "X" to close this pop-up.</p>
+    <div class="info-popup" id="info1">
+        <button class="close-btn" onclick="closePopup('info1')">&times;</button>
+        <p>This is Info Button 1. Click on the "X" to close this pop-up.</p>
+    </div>
+    <div class="info-popup" id="info2">
+        <button class="close-btn" onclick="closePopup('info2')">&times;</button>
+        <p>This is Info Button 2. Click on the "X" to close this pop-up.</p>
     </div>
 
     <script>
-        // Info Popup Script
-        const infoButton = document.querySelector('.button .info-icon');
-        const popup = document.querySelector('.info-popup');
-        const closeBtn = document.querySelector('.close-btn');
-        const overlay = document.querySelector('.overlay');
-
-        // Show Popup
-        infoButton.addEventListener('click', () => {
+        function showInfo(infoId) {
+            const popup = document.getElementById(infoId);
+            const overlay = document.querySelector('.overlay');
             popup.style.display = 'block';
             overlay.style.display = 'block';
-        });
+        }
 
-        // Hide Popup
-        closeBtn.addEventListener('click', () => {
+        function closePopup(infoId) {
+            const popup = document.getElementById(infoId);
+            const overlay = document.querySelector('.overlay');
             popup.style.display = 'none';
             overlay.style.display = 'none';
-        });
+        }
 
-        overlay.addEventListener('click', () => {
-            popup.style.display = 'none';
-            overlay.style.display = 'none';
+        document.querySelector('.overlay').addEventListener('click', () => {
+            const allPopups = document.querySelectorAll('.info-popup');
+            allPopups.forEach(popup => {
+                popup.style.display = 'none';
+            });
+            document.querySelector('.overlay').style.display = 'none';
         });
 
         // Smooth Scrolling
@@ -318,3 +325,4 @@
     </script>
 </body>
 </html>
+
