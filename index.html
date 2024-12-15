@@ -29,8 +29,8 @@
 
         body {
             background: linear-gradient(45deg, #1a0033, #37006e, #000000);
-            background-size: 400% 400%; 
-            animation: gradientAnimation 15s ease infinite; 
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
             overflow-x: hidden;
         }
 
@@ -54,8 +54,8 @@
             padding: 15px 0;
             text-align: center;
             z-index: 10;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-            backdrop-filter: blur(10px); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
         }
 
         nav a {
@@ -63,15 +63,15 @@
             margin: 0 20px;
             text-decoration: none;
             font-size: 1.2em;
-            font-weight: 600; 
-            text-transform: uppercase; 
-            letter-spacing: 1px; 
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
             transition: color 0.3s ease, transform 0.2s ease;
         }
 
         nav a:hover {
-            color: #bb40bb; 
-            transform: scale(1.1); 
+            color: #bb40bb;
+            transform: scale(1.1);
         }
 
         section {
@@ -131,6 +131,8 @@
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
             margin: 5px;
+            width: 220px;
+            justify-content: space-between;
         }
 
         .button:hover {
@@ -233,6 +235,7 @@
             z-index: 999;
         }
 
+        /* Media Queries */
         @media (max-width: 768px) {
             .showcase-image-container {
                 width: 100%;
