@@ -302,6 +302,7 @@
         <a href="#home">Home</a>
         <a href="#voordelen">Voordelen van Online Investeren</a>
         <a href="#impact">Impact van Sociale Media op Investeren</a>
+        <a href="#handelsstrategieën">Handels Strategieën</a>
     </nav>
 
     <section id="home">
@@ -394,6 +395,99 @@
         </div>
     </section>
 
+    <section id="handelsstrategieën">
+        <h1>Handels Strategieën bij Investeren</h1>
+        <p>Er zijn verschillende handelsstrategieën die beleggers kunnen gebruiken om hun winst te maximaliseren. Hieronder leggen we de vijf meest populaire strategieën uit, die elk hun eigen unieke benaderingen en kenmerken hebben.</p>
+
+        <div class="button-container">
+            <div class="button" onclick="showInfo('daytrading')">
+                Day Trading
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="button" onclick="showInfo('positiontrading')">
+                Position Trading
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="button" onclick="showInfo('swingtrading')">
+                Swing Trading
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="button" onclick="showInfo('trendtrading')">
+                Trend Trading
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="button" onclick="showInfo('priceactiontrading')">
+                Price Action Trading
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Modals -->
+    <div class="overlay"></div>
+
+    <div class="info-popup" id="daytrading">
+        <button class="close-btn" onclick="closePopup('daytrading')">&times;</button>
+        <p><strong>Day Trading</strong></p>
+        <p>Day trading is een strategie waarbij beleggers aandelen kopen en verkopen op dezelfde handelsdag om winst te maken. Dit vereist het analyseren van markten en trends om prijsfluctuaties te benutten. Day traders moeten snel kunnen reageren op marktschommelingen.</p>
+        <p><strong>Kenmerken:</strong></p>
+        <ul>
+            <li>Snel beslissingen nemen</li>
+            <li>Korte termijn focus</li>
+            <li>Goed kunnen focussen op de markten</li>
+        </ul>
+    </div>
+
+    <div class="info-popup" id="positiontrading">
+        <button class="close-btn" onclick="closePopup('positiontrading')">&times;</button>
+        <p><strong>Position Trading</strong></p>
+        <p>Position trading is een strategie voor de lange termijn waarbij beleggers aandelen kopen en vasthouden voor weken, maanden, of zelfs jaren. Deze strategie vereist grondige kennis en geduld.</p>
+        <p><strong>Kenmerken:</strong></p>
+        <ul>
+            <li>Lange termijn focus</li>
+            <li>Vereist geduld en kennis</li>
+            <li>Langere tijd voor prijsveranderingen</li>
+        </ul>
+    </div>
+
+    <div class="info-popup" id="swingtrading">
+        <button class="close-btn" onclick="closePopup('swingtrading')">&times;</button>
+        <p><strong>Swing Trading</strong></p>
+        <p>Swing trading richt zich op het profiteren van prijsbewegingen over enkele dagen tot weken. Beleggers proberen de tijdelijke "swings" in de markt te vangen zonder aandelen lang vast te houden.</p>
+        <p><strong>Kenmerken:</strong></p>
+        <ul>
+            <li>Tussen kort en lange termijn in</li>
+            <li>Focust op risicobeheer</li>
+            <li>Populair bij particuliere beleggers</li>
+        </ul>
+    </div>
+
+    <div class="info-popup" id="trendtrading">
+        <button class="close-btn" onclick="closePopup('trendtrading')">&times;</button>
+        <p><strong>Trend Trading</strong></p>
+        <p>Trend trading maakt gebruik van de natuurlijke prijstrends op de markt. Beleggers kopen wanneer de prijzen stijgen en verkopen wanneer de prijzen dalen om te profiteren van de trends en risico's te minimaliseren.</p>
+        <p><strong>Kenmerken:</strong></p>
+        <ul>
+            <li>Risicobeheer is essentieel</li>
+            <li>De markt nauwkeurig volgen</li>
+            <li>Geduld en controle over emoties</li>
+        </ul>
+    </div>
+
+    <div class="info-popup" id="priceactiontrading">
+        <button class="close-btn" onclick="closePopup('priceactiontrading')">&times;</button>
+        <p><strong>Price Action Trading</strong></p>
+        <p>Price action trading focust zich enkel op prijsbewegingen zonder gebruik te maken van indicatoren, behalve candlestick-analyse. Beleggers proberen de marktbewegingen te begrijpen om de toekomstige prijsbewegingen te voorspellen.</p>
+        <p><strong>Kenmerken:</strong></p>
+        <ul>
+            <li>Gebruik van candlestick-analyse</li>
+            <li>Flexibiliteit in strategie</li>
+            <li>Focus op de prijsbewegingen</li>
+        </ul>
+    </div>
+
+
+    
     <!-- Popup Modals for Impact Section -->
     <div class="overlay"></div>
 
