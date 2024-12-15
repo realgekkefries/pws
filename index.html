@@ -254,20 +254,8 @@
     <section id="home">
         <h1>PWS - Sam & Swen</h1>
         <div class="buttons">
-            <a class="button" onclick="window.open('https://discord.gg/0xtool');">
-                <i class="fab fa-discord" style="margin-right: 6px;"></i>
-                Discord Server
-            </a>
-            <a class="button" onclick="window.open('https://easyupload.io/55arxh');">
-                <i class="fas fa-download" style="margin-right: 6px;"></i>
-                Download Latest Version
-            </a>
-            <div class="button" onclick="showInfo('info1')">
-                Info Button 1
-                <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
-            </div>
-            <div class="button" onclick="showInfo('info2')">
-                Info Button 2
+            <div class="button" onclick="showInfo('introductie')">
+                Introductie
                 <i class="fas fa-info-circle info-icon" style="margin-left: 10px;"></i>
             </div>
         </div>
@@ -278,13 +266,14 @@
 
     <!-- Popup Modals -->
     <div class="overlay"></div>
-    <div class="info-popup" id="info1">
-        <button class="close-btn" onclick="closePopup('info1')">&times;</button>
-        <p>This is Info Button 1. Click on the "X" to close this pop-up.</p>
-    </div>
-    <div class="info-popup" id="info2">
-        <button class="close-btn" onclick="closePopup('info2')">&times;</button>
-        <p>This is Info Button 2. Click on the "X" to close this pop-up.</p>
+    <div class="info-popup" id="introductie">
+        <button class="close-btn" onclick="closePopup('introductie')">&times;</button>
+        <p>
+            <strong>Dit is het profiel werkstuk (PWS) van ons, wij zitten in mavo 4 en wij hebben voor school een pws gemaakt om ons examen te kunnen doen.</strong>
+        </p>
+        <p>
+            Wij hebben voor dit onderwerp gekozen omdat wij investeren allebei een erg interessant onderwerp vinden. En allebei later graag willen beginnen met investeren. En zien dit als de kans om er meer over te leren en beter in te worden om meer winst te maken.
+        </p>
     </div>
 
     <script>
