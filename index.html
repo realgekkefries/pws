@@ -76,7 +76,7 @@
 
         section {
             width: 100%;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -115,6 +115,8 @@
             display: flex;
             gap: 20px;
             margin-top: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .button {
@@ -128,6 +130,7 @@
             text-decoration: none;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
+            margin: 5px;
         }
 
         .button:hover {
@@ -137,7 +140,8 @@
 
         .showcase-image-container {
             position: relative;
-            width: 800px;
+            width: 80%;
+            max-width: 800px;
             height: 300px;
             margin-top: 40px;
         }
@@ -242,6 +246,25 @@
             .button {
                 width: 100%;
                 justify-content: center;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .image-container {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2em;
+            }
+
+            .showcase-image-container img {
+                height: auto;
             }
         }
     </style>
