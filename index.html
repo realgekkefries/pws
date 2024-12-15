@@ -115,8 +115,9 @@
             display: flex;
             gap: 20px;
             margin-top: 40px;
-            flex-wrap: wrap;
+            flex-direction: column; /* Stacks the buttons vertically */
             justify-content: center;
+            align-items: center;
         }
 
         .button {
@@ -243,7 +244,7 @@
             }
 
             .buttons {
-                flex-direction: column;
+                flex-direction: column; /* Stacks buttons vertically */
             }
 
             .button {
@@ -269,31 +270,6 @@
             .showcase-image-container img {
                 height: auto;
             }
-        }
-
-        /* Updated Styles for "Voordelen" Section Buttons */
-        .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px; /* Increased gap between buttons */
-            justify-content: center;
-            margin-top: 40px;
-        }
-
-        .button {
-            display: flex;
-            align-items: center;
-            padding: 10px 15px;
-            background-color: #6200ea;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-            margin: 5px;
-            width: 220px;
-            justify-content: space-between;
         }
     </style>
 </head>
